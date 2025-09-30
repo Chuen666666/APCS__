@@ -5,12 +5,10 @@ x = list(map(int, input().split()))
 
 for i in range(len(x)):
     added = 0
-
     while h1 > 0 and x[i] > 0:
         added += 1
         h1 -= 1
         x[i] -= w1**2
-        
     while h2 > 0 and x[i] > 0:
         added += 1
         h2 -= 1
