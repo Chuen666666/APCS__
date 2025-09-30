@@ -1,14 +1,15 @@
-a,b,c=map(int,input().split())
-n = int(0)
-a,b,c = bool(a),bool(b),bool(c)
-if( a and b )== c:
+a, b, c = map(int, input().split())
+n = False
+a, b, c = bool(a), bool(b), bool(c)
+
+if (a and b) == c:
     print("AND")
-    n+=1 
+    n = True
 if (a or b) == c:
     print("OR")
-    n+=1 
+    n = True
 if (a ^ b) == c:
     print("XOR")
-    n+=1 
-if n == 0:
+    n = True
+if not n:
     print("IMPOSSIBLE")

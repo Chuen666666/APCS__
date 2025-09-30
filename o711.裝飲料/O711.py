@@ -1,11 +1,11 @@
 times = int(input())
-w1,w2,h1,h2 = map(int,input().split())
-ans = int(0)
-x = list(map(int,input().split()))
+w1, w2, h1, h2 = map(int, input().split())
+ans = 0
+x = list(map(int, input().split()))
 
 for i in range(len(x)):
-    added = int(0)
-    
+    added = 0
+
     while h1 > 0 and x[i] > 0:
         added += 1
         h1 -= 1
@@ -15,6 +15,6 @@ for i in range(len(x)):
         added += 1
         h2 -= 1
         x[i] -= w2**2
-    ans=max(ans,added)
+    ans = max(ans, added)
     
 print(ans)

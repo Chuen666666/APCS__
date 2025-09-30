@@ -1,13 +1,13 @@
 a = int(input())
-scores = sorted(map(int,input().split()))
+scores = sorted(map(int, input().split()))
 
-for i in range(0,a,1):
-    print(scores[i],end="")
-    if i < a-1 :
-        print(" ",end = "")
+for i in range(a):
+    print(scores[i], end="")
+    if i < a - 1:
+        print(" ", end="")
 print()
 
-for i in range (0,a,1):
+for i in range(a):
     if scores[a-1] < 60:
         print(scores[a-1])
         print("worst case")
@@ -16,8 +16,7 @@ for i in range (0,a,1):
         print("best case")
         print(scores[0])
         break
-    elif scores[i]>=60:
+    elif scores[i] >= 60:
         print(scores[i-1])
         print(scores[i])
         break
-    

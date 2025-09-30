@@ -1,30 +1,28 @@
 n = int(input())
-a,b = map(int,input().split())
-準備方向=0
-現在方向=0
-#東 0 北1 西2 南 3 
-L,R,T,Nothing = 0,0,0,0
+a, b = map(int, input().split())
+next = 0
+now = 0
+# 東0 北1 西2 南3
+left = right = turn = nothing = 0
+
 for i in range(n-1):
-    x,y = map(int,input().split())
-    if  x > a:
-        準備方向=0
-    elif x < a :
-        準備方向=2
-    if y > b :
-        準備方向=1
-    elif y < b :
-        準備方向=3
-    if 現在方向==準備方向:
-        Nothing+=1
-    elif 準備方向-現在方向==1 or 準備方向-現在方向==-3:
-        L+=1
-    elif 準備方向-現在方向==2 or 準備方向-現在方向==-2:
-        T+=1
-    elif 準備方向-現在方向==3 or 準備方向-現在方向==-1:
-        R+=1
-    現在方向,a,b=準備方向,x,y
-print(L,R,T)
-    
+    x, y = map(int, input().split())
+    if x > a:
+        next = 0
+    elif x < a:
+        next = 2
+    if y > b:
+        next = 1
+    elif y < b:
+        next = 3
+    if now == next:
+        nothing += 1
+    elif next - now == 1 or next - now == -3:
+        left += 1
+    elif next - now == 2 or next - now == -2:
+        turn += 1
+    elif next - now == 3 or next - now == -1:
+        right += 1
+    now, a, b = next, x, y
 
-
-    
+print(left, right, turn)
