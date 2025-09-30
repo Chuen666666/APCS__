@@ -1,10 +1,6 @@
 a, b, c = sorted(map(int, input().split()))
 
-for i in range(3):
-    if i < 2:
-        print(a[i], end=" ")
-    else:
-        print(a[i])
+print(a, b, c)
 
 if a + b <= c:
     print("No")
