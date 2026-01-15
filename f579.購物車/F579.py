@@ -2,7 +2,7 @@ a, b = map(int, input().split())
 n = int(input())
 ans = 0
 
-for i in range(n):
+for _ in range(n):
     x = map(int, input().split())
     c = [0] * 101
     for k in x:

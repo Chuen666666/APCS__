@@ -5,7 +5,7 @@ now = 0
 # 東0 北1 西2 南3
 left = right = turn = nothing = 0
 
-for i in range(n-1):
+for _ in range(n - 1):
     x, y = map(int, input().split())
     if x > a:
         next = 0

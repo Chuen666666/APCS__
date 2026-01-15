@@ -3,10 +3,10 @@ a, b, c = sorted(map(int, input().split()))
 print(a, b, c)
 
 if a + b <= c:
-    print("No")
+    print('No')
 elif a**2 + b**2 == c**2:
-    print("Right")
+    print('Right')
 elif a**2 + b**2 > c**2:
-    print("Acute")
+    print('Acute')
 else:
-    print("Obtuse")
+    print('Obtuse')

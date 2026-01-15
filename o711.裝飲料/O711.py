@@ -14,5 +14,5 @@ for i in range(len(x)):
         h2 -= 1
         x[i] -= w2**2
     ans = max(ans, added)
-    
+
 print(ans)

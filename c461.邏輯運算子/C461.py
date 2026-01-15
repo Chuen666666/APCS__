@@ -3,13 +3,13 @@ n = False
 a, b, c = bool(a), bool(b), bool(c)
 
 if (a and b) == c:
-    print("AND")
+    print('AND')
     n = True
 if (a or b) == c:
-    print("OR")
+    print('OR')
     n = True
 if (a ^ b) == c:
-    print("XOR")
+    print('XOR')
     n = True
 if not n:
-    print("IMPOSSIBLE")
+    print('IMPOSSIBLE')

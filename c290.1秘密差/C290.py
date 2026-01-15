@@ -8,4 +8,4 @@ for i in range(len(a)):
     else:
         c += int(a[i])
 
-print(abs(c-b))
+print(abs(c - b))
